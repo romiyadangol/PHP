@@ -45,7 +45,7 @@ function calculateSum($num1, $num2){
     global $result; 
     $result = $num1 + $num2;
     if (is_float($result)) {
-        $result = round($result);
+        $result = ceil($result);
         echo $result;
     } else {
         echo $result;
